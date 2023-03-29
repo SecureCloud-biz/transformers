@@ -200,10 +200,11 @@ if __name__ == "__main__":
     output_path = "tiny_models"
     all = True
     model_types = None
-    models_to_skip = get_tiny_model_names_from_repo()
+    models_to_skip = []  # get_tiny_model_names_from_repo()
     no_check = True
     upload = True
-    organization = "hf-internal-testing"
+    # organization = "hf-internal-testing"
+    organization = "hf-tiny-model-private"
 
     create_tiny_models(
         output_path,
